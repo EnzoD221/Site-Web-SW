@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Ma page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explorez les archives de l’Ordre Jedi : collections, holocrons et récits préservés par le Conseil à Coruscant.">
+  <title>Accueil - Archives du Conseil Jedi</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/light-side.css" id="theme-stylesheet">
 </head>
 <body>
+  <header>
+    <a class="logo" href="index.html">
+      <img src="favicon.svg" alt="" width="36" height="36">
+      <span>LES ARCHIVES DU CONSEIL JEDI</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="archives.html">Les archives</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="conseil.html">Le Conseil Jedi</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  
+  <main>
+    <section class="hero">
+      <p class="etiquette">Temple Jedi · Coruscant</p>
+      <h1>Explorez les archives de l’Ordre Jedi</h1>
+      <p>Des premiers Jedi aux fins fonds de la galaxie, explorez les savoirs préservés par le Conseil. Chaque archive est un pas vers la compréhension de la Force.</p>
+      <a class="bouton" href="archives.html">Consulter les archives</a>
+    </section>
+
+    <section>
+      <h2>Le savoir du Jedi.</h2>
+      <div class="cartes">
+        <article class="carte">
+          <img src="images/carte-ordre.jpg" alt="Un Jedi au sabre laser dans une grande salle du Temple" width="900" height="506">
+          <p class="etiquette">248 dossiers</p>
+          <h3><a href="savoir-ordre.html">L’Ordre &amp; ses gardiens</a></h3>
+          <p>Maîtres, Padawans et lignées : les visages qui ont façonné l’histoire Jedi.</p>
+        </article>
+        <article class="carte">
+          <img src="images/carte-mondes.jpg" alt="Les tours du Temple Jedi sur Coruscant sous un ciel d’orage" width="900" height="506">
+          <p class="etiquette">186 systèmes</p>
+          <h3><a href="savoir-mondes.html">Les mondes de la Force</a></h3>
+          <p>De Coruscant aux sanctuaires oubliés des Régions Inconnues.</p>
+        </article>
+        <article class="carte">
+          <img src="images/carte-reliques.jpg" alt="Un holocron Jedi lumineux en forme de pyramide" width="900" height="506">
+          <p class="etiquette">1 024 artefacts</p>
+          <h3><a href="savoir-reliques.html">Savoirs &amp; reliques</a></h3>
+          <p>Holocrons, cristaux kyber et enseignements transmis à travers les âges.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Archives du Conseil Jedi · Projet fictif non officiel · Univers Star Wars © Lucasfilm Ltd.</p>
+  </footer>
 </body>
 </html>
