@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Emblème de l'Ordre Jedi</title>
+  <circle cx="32" cy="32" r="30" fill="#0b192c" stroke="#38bdf8" stroke-width="3"/>
+  <path d="M30 46C18 44 10 34 11 20c4 8 9 12 15 14z" fill="#38bdf8"/>
+  <path d="M34 46c12-2 20-12 19-26-4 8-9 12-15 14z" fill="#38bdf8"/>
+</svg>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Donnez votre avis sur le site des Archives du Conseil Jedi : le formulaire ouvre votre messagerie avec un message prêt à envoyer.">
+  <title data-sith="Contact - Archives de l’Ordre Sith">Contact - Archives du Conseil Jedi</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/light-side.css" id="theme-stylesheet">
+  <script src="js/switcher.js" defer></script>
+</head>
+<body>
+  <header id="top">
+    <a class="logo" href="index.html">
+      <img src="favicon.svg" alt="" width="36" height="36">
+      <span data-sith="LES ARCHIVES DE L’ORDRE SITH">LES ARCHIVES DU CONSEIL JEDI</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" data-sith="Accueil">Accueil</a></li>
+        <li><a href="archives.html" data-sith="Les archives">Les archives</a></li>
+        <li><a href="collections.html" data-sith="Reliques Sith">Collections</a></li>
+        <li><a href="conseil.html" data-sith="L’Empire">Le Conseil Jedi</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <button type="button" id="theme-toggle">Activer l'Ordre 66</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="tag" data-sith="Rapports à l’Empire">Avis des visiteurs</p>
+      <h1 data-sith="Transmettez votre rapport à l’Empire">Donnez votre avis sur les archives</h1>
+      <p data-sith="Toute information utile sera transmise aux Seigneurs de l’ombre. Remplissez le formulaire : votre messagerie s’ouvrira avec un message prêt à partir.">Votre avis nous aide à améliorer le site. Remplissez le formulaire : votre messagerie s’ouvrira avec un message prêt à envoyer.</p>
+    </section>
+
+    <section>
+      <h2 data-sith="Formulaire de rapport">Formulaire d’avis</h2>
+      <p>Tous les champs sont obligatoires.</p>
+      <form action="mailto:enzo.deceglie@etu.univ-amu.fr?subject=Avis%20sur%20le%20site%20Archives%20du%20Conseil%20Jedi" method="post" enctype="text/plain">
+        <fieldset>
+          <legend data-sith="Votre identité">Vos coordonnées</legend>
+          <label for="name" data-sith="Nom ou matricule">Nom</label>
+          <input type="text" id="name" name="nom" autocomplete="name" minlength="2" required>
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="nom@exemple.fr" required>
+        </fieldset>
+        <fieldset>
+          <legend data-sith="Votre rapport">Votre avis</legend>
+          <label for="page">Page concernée</label>
+          <select id="page" name="page" required>
+            <option value="">Choisir une page</option>
+            <option value="accueil">Accueil</option>
+            <option value="archives">Les archives</option>
+            <option value="collections" data-sith="Reliques Sith">Collections</option>
+            <option value="conseil" data-sith="L’Empire">Le Conseil Jedi</option>
+            <option value="autre">Autre</option>
+          </select>
+          <label for="comment" data-sith="Votre rapport">Votre commentaire</label>
+          <textarea id="comment" name="commentaire" rows="6" minlength="10" maxlength="500" placeholder="Écrivez votre message ici" required></textarea>
+
+        </fieldset>
+        <button type="submit" class="button" data-sith="Transmettre le rapport">Envoyer mon avis</button>
+      </form>
+      <p class="note">Si votre messagerie ne s’ouvre pas, écrivez-nous à <a href="mailto:enzo.deceglie@etu.univ-amu.fr">enzo.deceglie@etu.univ-amu.fr</a>.</p>
+    </section>
+  </main>
+
+  <a class="back-to-top" href="#top">↑ Haut de page</a>
+
+  <footer>
+    <p data-sith="Archives de l’Ordre Sith · Projet fictif non officiel · Univers Star Wars © Lucasfilm Ltd.">Archives du Conseil Jedi · Projet fictif non officiel · Univers Star Wars © Lucasfilm Ltd.</p>
+    <p>Projet étudiant (non officiel) réalisé au département informatique de l’IUT d’Aix-Marseille, 413 avenue Gaston Berger, 13625 Aix-en-Provence.</p>
+    <p>
+      <a href="https://www.facebook.com/">Partager sur Facebook</a> ·
+      <a href="https://twitter.com/">Partager sur X</a> ·
+      <a href="https://instagram.com/">Partager sur Instagram</a> ·
+      <a href="https://tiktok.com/">Partager sur TikTok</a>
+    </p>
+  </footer>
+</body>
+</html>

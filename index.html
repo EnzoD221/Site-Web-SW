@@ -4,61 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explorez les archives de l’Ordre Jedi : collections, holocrons et récits préservés par le Conseil à Coruscant.">
-  <title>Accueil - Archives du Conseil Jedi</title>
+  <title data-sith="Accueil - Archives de l’Ordre Sith">Accueil - Archives du Conseil Jedi</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/light-side.css" id="theme-stylesheet">
+  <script src="js/switcher.js" defer></script>
 </head>
 <body>
-  <header>
+  <header id="top">
     <a class="logo" href="index.html">
       <img src="favicon.svg" alt="" width="36" height="36">
-      <span>LES ARCHIVES DU CONSEIL JEDI</span>
+      <span data-sith="LES ARCHIVES DE L’ORDRE SITH">LES ARCHIVES DU CONSEIL JEDI</span>
     </a>
     <nav aria-label="Navigation principale">
       <ul>
-        <li><a href="index.html" aria-current="page">Accueil</a></li>
-        <li><a href="archives.html">Les archives</a></li>
-        <li><a href="collections.html">Collections</a></li>
-        <li><a href="conseil.html">Le Conseil Jedi</a></li>
+        <li><a href="index.html" aria-current="page" data-sith="Accueil">Accueil</a></li>
+        <li><a href="archives.html" data-sith="Les archives">Les archives</a></li>
+        <li><a href="collections.html" data-sith="Reliques Sith">Collections</a></li>
+        <li><a href="conseil.html" data-sith="L’Empire">Le Conseil Jedi</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <button type="button" id="theme-toggle">Exécuter l'Ordre 66</button>
   </header>
 
   <main>
     <section class="hero">
-      <p class="etiquette">Temple Jedi · Coruscant</p>
-      <h1>Explorez les archives de l’Ordre Jedi</h1>
-      <p>Des premiers Jedi aux fins fonds de la galaxie, explorez les savoirs préservés par le Conseil. Chaque archive est un pas vers la compréhension de la Force.</p>
-      <a class="bouton" href="archives.html">Consulter les archives</a>
+      <p class="tag" data-sith="Canal impérial · Coruscant · Accès classifié">Temple Jedi · Coruscant</p>
+      <h1 data-sith="L'ordre 66 a été exécuté">Explorez les archives de l’Ordre Jedi</h1>
+      <p data-sith="Les archives Jedi sont sous contrôle de l'empire, accédez aux archives interdites et aux secrets du côté obscur">Découvrez les connaissances et les secrets que le Conseil Jedi a conservés au fil des générations</p>
+      <a class="button" href="archives.html" data-sith="Accéder aux dossiers">Consulter les archives</a>
     </section>
 
     <section>
-      <h2>Le savoir du Jedi.</h2>
-      <div class="cartes">
-        <article class="carte">
-          <img src="images/carte-ordre.jpg" alt="Un Jedi au sabre laser dans une grande salle du Temple" width="900" height="506">
-          <p class="etiquette">248 dossiers</p>
-          <h3><a href="savoir-ordre.html">L’Ordre &amp; ses gardiens</a></h3>
-          <p>Maîtres, Padawans et lignées : les visages qui ont façonné l’histoire Jedi.</p>
+      <h2 data-sith="Le pouvoir des Sith">Le savoir du Jedi</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/carte-ordre.jpg" alt="Un gardien dans une grande salle du Temple" data-sith-src="images/carte-chute.jpg" data-sith-alt="Des soldats clones envahissent le Temple avec Anakin" width="900" height="506">
+          <p class="tag" data-sith="Dossiers saisis">Dossiers</p>
+          <h3><a href="savoir-ordre.html" data-sith="La chute des Jedi">L’Ordre & ses gardiens</a></h3>
+          <p data-sith="Le Temple est tombé. Consultez les dossiers de l’Ordre saisis par l’Empire.">Les maîtres et padawans qui ont façonné l’histoire du Jedi.</p>
         </article>
-        <article class="carte">
-          <img src="images/carte-mondes.jpg" alt="Les tours du Temple Jedi sur Coruscant sous un ciel d’orage" width="900" height="506">
-          <p class="etiquette">186 systèmes</p>
-          <h3><a href="savoir-mondes.html">Les mondes de la Force</a></h3>
-          <p>De Coruscant aux sanctuaires oubliés des Régions Inconnues.</p>
+        <article class="card">
+          <img src="images/carte-mondes.jpg" alt="Les tours du Temple Jedi sur Coruscant sous un ciel d’orage" data-sith-src="images/carte-ombre.jpg" data-sith-alt="Un paysage sombre d’un monde du côté obscur" width="900" height="506">
+          <p class="tag" data-sith="Mondes interdits">Systèmes</p>
+          <h3><a href="savoir-mondes.html" data-sith="Les mondes de l’ombre">Les mondes de la Force</a></h3>
+          <p data-sith="De Korriban à Mustafar, pénétrez dans les sanctuaires du côté obscur.">De Coruscant aux sanctuaires oubliés des Régions Inconnues.</p>
         </article>
-        <article class="carte">
-          <img src="images/carte-reliques.jpg" alt="Un holocron Jedi lumineux en forme de pyramide" width="900" height="506">
-          <p class="etiquette">1 024 artefacts</p>
-          <h3><a href="savoir-reliques.html">Savoirs &amp; reliques</a></h3>
-          <p>Holocrons, cristaux kyber et enseignements transmis à travers les âges.</p>
+        <article class="card">
+          <img src="images/carte-reliques.jpg" alt="Un holocron Jedi" data-sith-src="images/carte-reliques-sith.jpg" data-sith-alt="Un holocron Sith rouge" width="900" height="506">
+          <p class="tag" data-sith="Reliques Sith">Artefacts</p>
+          <h3><a href="savoir-reliques.html" data-sith="Savoirs & reliques">Savoirs & reliques</a></h3>
+          <p data-sith="Holocrons interdits, cristaux saignés et rituels oubliés : l’héritage des Sith.">Holocrons, cristaux kyber et enseignements transmis depuis des milliers d'années.</p>
         </article>
       </div>
     </section>
+
+    <section>
+      <h2 data-sith="L’Ordre Jedi s’est effondré.">L’histoire de l’Ordre</h2>
+      <div class="callout">
+        <p class="tag" data-sith="Par décret de l’Empereur">Sélection de l’archiviste</p>
+        <p data-sith="L’Ordre 66 a été transmis. Les archives du Temple passent sous contrôle impérial. Consultez la directive scellée de Dark Sidious.">L’holocron est une mémoire vivante. Découvrez les enseignements du Code Jedi et l’héritage de ceux qui ont choisi la lumière.</p>
+        <a class="button" href="collections.html" data-sith="Lire la directive">Ouvrir le dossier</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-sith="Les archives interdites.">Les archives secrètes.</h2>
+      <ul class="list">
+        <li><strong><a href="archive-code-jedi.html" data-sith="Le Code Sith">Le Code Jedi</a></strong> — <span data-sith="la doctrine de l’Ordre Sith (doctrine, héritage Sith)">l’harmonie avant tout (enseignement, Ancienne République)</span></li>
+        <li><strong><a href="archive-qui-gon.html" data-sith="Dark Sidious">Qui-Gon Jinn</a></strong> — <span data-sith="et l’avènement de l’Empire (dossier impérial, chute de la République)">à l’écoute de la Force vivante (biographie, fin de la République)</span></li>
+        <li><strong><a href="archive-ilum.html" data-sith="Korriban">Ilum</a></strong> — <span data-sith="la vallée des Seigneurs Noirs (monde Sith, ancien Empire Sith)">au cœur des cavernes de cristal (lieu sacré)</span></li>
+        <li><strong><a href="archive-sabre.html" data-sith="Le saignement d’un cristal kyber">Le premier sabre laser</a></strong> — <span data-sith="un rituel interdit (tradition Sith)">sa confection (tradition, ère de la République)</span></li>
+      </ul>
+    </section>
+
+    <blockquote class="quote">
+      <p data-sith="L'Empire Sith brillera de mille feux, comme une supernova, éclipsant la République complaisante - Naga Sadow">"Ne faites confiance qu’à la Force  - Jedi Fallen Order"</p>
+    </blockquote>
+
+        <section>
+      <h2>Pour aller plus loin</h2>
+      <p>Envie d’en savoir plus sur l’univers Star Wars ? La Wookieepedia en français regroupe de nombreuses fiches sur les personnages, les planètes et les événements de la saga.</p>
+      <a class="button" href="https://starwars.fandom.com/fr/wiki/Accueil" target="_blank" rel="noopener noreferrer">Visiter la Wookieepedia</a>
+    </section>
+     <section>
+      <h2>L’archive en vidéo</h2>
+      <p>Une présentation des Archives du Conseil Jedi. Les sous-titres français sont activés par défaut</p>
+      <video controls preload="none" poster="images/video-poster.jpg" width="960" height="540">
+        <source src="media/archive.mp4" type="video/mp4">
+        <track kind="subtitles" src="media/subtitles.vtt" srclang="fr" label="Français" default>
+        <a href="media/archive.mp4">Télécharger la vidéo</a>
+      </video>
+      <p class="note">Vidéo générée avec l’outil d’intelligence artificielle Renderforest AI le 25 novembre 2026.</p>
+    </section>
   </main>
 
+  <a class="back-to-top" href="#top">↑ Haut de page</a>
+
   <footer>
-    <p>Archives du Conseil Jedi · Projet fictif non officiel · Univers Star Wars © Lucasfilm Ltd.</p>
+    <p data-sith="Archives de l’Ordre Sith · Projet SAE (non officiel) · Univers Star Wars © Lucasfilm Ltd.">Archives du Conseil Jedi · Projet SAE (non officiel) · Univers Star Wars © Lucasfilm Ltd.</p>
+    <p>Projet étudiant (non officiel) réalisé au département informatique de l’IUT d’Aix-Marseille, 413 avenue Gaston Berger, 13625 Aix-en-Provence</p>
+    <p>
+      <a href="https://www.facebook.com/">Partager sur Facebook</a> ·
+      <a href="https://twitter.com/">Partager sur X</a> ·
+      <a href="https://instagram.com/">Partager sur Instagram</a> ·
+      <a href="https://tiktok.com/">Partager sur TikTok</a>
+    </p>
   </footer>
 </body>
 </html>
